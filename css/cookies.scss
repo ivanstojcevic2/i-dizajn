@@ -1,0 +1,70 @@
+// #cookies {
+//   bottom: 0px;
+//   width: 100%;
+//   z-index: 800;
+//   position: fixed;
+//   background-color: rgba(0, 0, 0, 0.8);
+//   backdrop-filter: blur(15px);
+//   color: white;
+//   text-align: center;
+//   display: none;
+//   justify-content: center;
+//   flex-basis: 100%;
+//   .cookies {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
+// #cookies-btn {
+//   padding: 15px;
+//   background-color: white;
+//   color: black;
+//   font-family: Inter;
+//   font-size: 12pt;
+//   font-weight: 400;
+//   border-radius: 25px;
+//   border: none;
+//   cursor: pointer;
+// }
+
+#cookies {
+  bottom: 0px;
+  width: 100%;
+  z-index: 800;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(15px);
+  color: white;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#cookies-btn {
+  padding: 15px;
+  margin: 0px 50px;
+  background-color: white;
+  color: black;
+  font-family: Inter;
+  font-size: 12pt;
+  font-weight: 400;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#cookies-btn:hover {
+  background-color: black;
+  color: white;
+}

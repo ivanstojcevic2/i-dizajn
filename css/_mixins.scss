@@ -1,0 +1,29 @@
+@import "./colors.scss";
+
+@mixin flex-content {
+  display: flex;
+}
+
+@mixin card {
+  color: $lightgray;
+}
+
+@mixin section-text {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 1%;
+}
+
+@mixin black-subsection {
+  background-color: black;
+  color: gray;
+  h2 {
+    color: white;
+  }
+}
+
+@mixin onload-hidden-sections {
+  display: none;
+}

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="i-dizajn - studio za web dizajn, audio/video produkciju i fotografiju">
+    <meta name="keywords" content="Web, dizajn, video, audio, foto, fotografija, digitalno">
+    <meta name="author" content="Ivan Stojcevic">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i-dizajn</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="#"
+              ><img src="./images/logo_white.png" alt="" onclick="homeLink()"
+            /></a>
+          </div>
+
+          <ul id="desktop-navbar">
+            <a href="#link-landing"
+              ><li onclick="homeLink()">
+                <div class="nav-button active-link" id="home-li">Početna</div>
+              </li></a
+            >
+            <a href="#link-landing"
+              ><li onclick="webLink()">
+                <div class="nav-button" id="web-li">Web</div>
+              </li></a
+            >
+            <a href="#link-landing"
+              ><li onclick="videoLink()">
+                <div class="nav-button" id="video-li">Video</div>
+              </li></a
+            >
+            <a href="#link-landing"
+              ><li onclick="fotoLink()">
+                <div class="nav-button" id="foto-li">Foto</div>
+              </li></a
+            >
+            <a href="#contact-section"
+              ><li onclick="contactLink()">
+                <div class="nav-button" id="contact-li">Kontakt</div>
+              </li></a
+            >
+          </ul>
+
+          <div class="toggle-btn" onclick="toggleNav()">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <a href="#link-landing"
+            ><li onclick="homeLink()">
+              <div class="nav-button" class="home-li">Početna</div>
+            </li></a
+          >
+          <a href="#link-landing"
+            ><li onclick="webLink()">
+              <div class="nav-button" class="web-li">Web</div>
+            </li></a
+          >
+          <a href="#link-landing"
+            ><li onclick="videoLink()">
+              <div class="nav-button" class="video-li">Video</div>
+            </li></a
+          >
+          <a href="#link-landing"
+            ><li onclick="fotoLink()">
+              <div class="nav-button" class="foto-li">Foto</div>
+            </li></a
+          >
+          <a href="#contact-section"
+            ><li onclick="contactLink()">
+              <div class="nav-button" class="contact-li">Kontakt</div>
+            </li></a
+          >
+        </ul>
+      </nav>
+
+      <div class="header-graphic">
+        <div class="header-side-nav-container"></div>
+        <div id="header-video-wrapper">
+          <video src="./video/heading-video.mp4" autoplay muted loop></video>
+        </div>
+        <div class="header-side-nav-container">
+          <div class="side-text">Scrollaj</div>
+          <a href="#link-landing"
+            ><div class="scroll-down-button">
+              <i class="fa-solid fa-chevron-down"></i></div
+          ></a>
+          <div class="side-text">niže</div>
+        </div>
+      </div>
+    </header>
+    <div id="link-landing"></div>
+    <main>
+      <!-- about -->
+      <section id="about-section" class="hideable-section">
+        <!-- content -->
+        <h2>i-dizajn</h2>
+
+        <div class="block-container">
+          <p>
+            i-dizajn je kreativna platforma za web dizajn, video produkciju i
+            fotografiju.
+          </p>
+          <p>
+            Naš fokus je klijent, a cilj našeg poslovanja je plasman web
+            identiteta - ne samo stranice, fotografije ili videa već kompletnog
+            sadržaja koji će klijent prezentirati i tako podići poslovanje na
+            višu razinu.
+          </p>
+          <p>i-dizajn stavlja naglasak na "i", nikada na "ili".</p>
+        </div>
+      </section>
+
+      <div id="about-subsection-wrapper">
+        <div id="about-subsection">
+          <h2>Od ideje do realizacije</h2>
+          <div id="about-subsection-flex-container">
+            <div id="alice-blue" class="about-subsection-articles">
+              <h3>Web</h3>
+              <p>
+                Razrada ideje, dizajn i izrada stranice.
+                <br />
+                Ljubav prema dizajnu i detaljima uz iskustvo na dosadašnjim
+                projekatima pružaju nam mogućnost da iznova dižemo svoje
+                standarde na idućem projektu.
+              </p>
+              <div class="image-wrapper">
+                <a href="#link-landing">
+                <div class="more-about-button">
+                  <div class="more-about-inner" onclick="webLink()">
+                    Više
+                  </div>
+                </div>
+                </a>
+                <img src="./images/developing.jpg" alt="" />
+              </div>
+            </div>
+            <div id="floral-white" class="about-subsection-articles">
+              <h3>Video i foto</h3>
+              <p>
+                Razvoj scenarija, režiranje, snimanje, fotografiranje i montaža
+                videa.
+                <br />
+                Partnerski odnos s Jadran Film<sup>©</sup> i drugim studijima
+                omogućuje uvjete za produkciju najviše razine.
+              </p>
+              <div class="image-wrapper">
+                <a href="#link-landing">
+                <div class="more-about-button">
+                  <div class="more-about-inner" onclick="videoLink()">
+                    Više
+                  </div>
+                </div>
+                </a>
+                <img src="./images/camera.png" alt="" />
+              </div>
+            </div>
+            <div id="antique-white" class="about-subsection-articles">
+              <h3>Audio</h3>
+              <p>
+                Pisanje textova, snimanje i produkcija zvučnih materijala.
+                <br />
+                Dugogodišnje iskustvo našeg "in-house" audio studija u
+                produkciji pjesama, jingle-ova, reklama i filmskih komada muzike
+                se savršeno nadopunjuje na našu video priču.
+              </p>
+              <div class="image-wrapper">
+                <a href="#link-landing">
+                <div class="more-about-button">
+                  <div class="more-about-inner" onclick="videoLink()">
+                    Više
+                  </div>
+                </div>
+                </a>
+                <img src="./images/audio.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="white-subsection">
+          <section>
+            <h2>Stvaramo nove priče</h2>
+
+            <div class="block-container">
+              <p>Svaki projekt je priča za sebe, novi izazov i nova prilika.</p>
+              <p>
+                Cijene naših usluga su varijable, a najbolja ponuda za klijenta
+                je konstanta.
+              </p>
+              <p>
+                Za upite o našim uslugama, cijenama i ostalim informacijama,
+                kontaktirajte nas...a možemo se dogovoriti i za kavu
+              </p>
+              <a href="tel:+38598233736" style="text-decoration: none;">
+              <div class="image-wrapper">
+                <div class="more-about-button">
+                  <div class="more-about-inner">
+                    Nazovi nas
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- web -->
+      <section id="web-section" class="hideable-section">
+        <!-- content -->
+        <h2>Web</h2>
+
+        <div class="block-container">
+          <p>
+            Web stranica je on-line identitet, zato je bitno kako on izgleda i
+            koliko je funkcionalan.
+          </p>
+          <p>
+            Moderne web stranice imaju imperativ biti ugodne oku i intuitivne
+            korisniku, nevažno radi li se o on-line trgovini ili osobnom
+            portfoliu.
+          </p>
+          <p>
+            Naš entuzijazam pri kreiranju svake stranice dolazi do izražaja i
+            rezultira vrhunskim proizvodima.
+          </p>
+        </div>
+
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="./images/websites/auto_miljanovic.png" alt="Image 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="./images/websites/neosoundstation2.JPG" alt="Image 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="./images/websites/krovod_tim.png" alt="Image 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="./images/websites/veseliorkestar.png" alt="Image 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="./images/websites/za_sutra.png" alt="Image 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="./images/websites/vacenovski.png" alt="Image 6" />
+          </div>
+          <div class="gallery-item">
+            <img src="./images/websites/star2studio.JPG" alt="Image 7" />
+          </div>
+          <div class="gallery-item">
+            <img src="./images/websites/glamour_beauty.png" alt="Image 8" />
+          </div>
+        </div>
+      </section>
+
+      <!-- video -->
+      <section id="video-section" class="hideable-section">
+        <!-- content -->
+        <h2>Video</h2>
+
+        <div class="block-container">
+          <p>Iz naše video produkcije...</p>
+          <p>
+            Odavno pjesma bez videa nije kompletan proizvod koji će privući
+            publiku. U našoj produkciji glazbenih spotova, glavnu ulogu ima
+            pjesma, a video ju savršeno prati.
+          </p>
+          <p>
+            Snimanje promotivnih videa za nekretnine je umjetnost za sebe.
+            Prezentacija kuće za odmor, stana ili proizvoda može biti film, a
+            nekretnina ili proizvod zanimljiv i jedinstveni scenarij.
+          </p>
+        </div>
+
+        <h2 class="section-heading">Glazbeni spotovi</h2>
+
+        <div id="music-videos">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/zhlvKlKmBDc?si=KwfwfNMYIl4_Lo5f"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="videos-tiles">
+            <div class="video-tile">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/ceSYy0q6nHU?si=JVhXGg-hXgKDJ1-9"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="video-tile">
+              <div>
+                <video src="./video/ti_i_ja.mp4" controls></video>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-heading">Reklamni video</h2>
+
+          <div class="videos-tiles">
+            <div class="video-tile">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/--XkWQG4rqo?si=cGu-9QwVAufPd6Pz"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="video-tile">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/CkJ1-Zjb0gg?si=2nVjHJiDFkHMFsko"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-heading">Shorts & reels </h2>
+            
+          <div class="shorts-tiles-container">
+
+            <div class="video-tile">
+              <div class="shorts-video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/m0Pa9MxqD2w"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="video-tile">
+              <div class="shorts-video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/DFWvFOsEwl4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- foto -->
+      <section id="foto-section" class="hideable-section">
+        <!-- content -->
+        <h2>Fotografija</h2>
+
+        <div class="block-container">
+          <p>Slika govori 1000 riječi, ljepota je u oku promatrača...</p>
+          <p>
+            Dobro poznati izrazi ne vrijede ako fotografija nije dobra. Neke
+            fotografije se dogode "same od sebe", a za ostalu većinu slučajeva,
+            potrebno je vrijeme i vještina.
+          </p>
+          <p>
+            Ukus za razliku od fotografije ne može biti crno/bijel, ali uz naše
+            alate, vještinu i iskustvo, svaka fotografija će reći upravo ono što
+            želimo i imati će ljepotu u oku svakog promatrača.
+          </p>
+        </div>
+
+        <div class="gallery-container">
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/01.jpg" alt="i-dizajn foto drums" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/02.jpg" alt="i-dizajn foto drums" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/03.jpg" alt="i-dizajn foto drums" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/04.jpg" alt="i-dizajn foto drums" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/05.png" alt="i-dizajn foto drums" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/06.jpg" alt="i-dizajn foto drums" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/07.jpg" alt="i-dizajn foto drums" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/08.png" alt="i-dizajn product foto" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/09.png" alt="i-dizajn product foto" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/10.jpg" alt="i-dizajn foto" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/11.jpg" alt="i-dizajn foto" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/12.jpg" alt="i-dizajn foto" /></span>
+          </div>
+          <div class="foto-gallery-item">
+            <span class="grayscale-wrapper"><img src="./images/photos/13.png" alt="i-dizajn foto" /></span>
+          </div>
+        </div>
+
+        <div class="popup">
+          <div class="nav-buttons">
+            <div class="prev-btn gallery-buttons"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="next-btn gallery-buttons"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="popup-content">
+            <img src="" alt="Popup Image" class="popup-img">
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <secction id="contact-section" class="hideable-section">
+        <!-- content -->
+        <div class="flex-container">
+          <div class="flex-card">
+            <div class="overlay-text">
+              <h3>Kontakt</h3>
+              <p>kontaktirajte nas putem:</p>
+              <p>
+                mobitel: +385 99 8400 636<br />
+                mail: info@i-dizajn.com<br />
+              </p>
+              <p>
+                instagram: @i_dizajn_ <br>
+                facebook: @
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.716446893476!2d16.160573876717496!3d45.81693690983374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667a0fe1ef4323%3A0xca57fea37f5091b7!2sUl.%20Bra%C4%87e%20Radi%C4%87%2025%2C%2010360%2C%20Sesvete!5e0!3m2!1sen!2shr!4v1708464018464!5m2!1sen!2shr"
+                width="100%"
+                height="450px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="flex-card">
+            <h2>Vidimo se na idućem projektu</h2>
+            <video src="./video/blue-powder.mp4" alt="" autoplay loop muted>
+          </div>
+        </div>
+      </secction>
+    </main>
+
+    <footer>
+      <!-- content -->
+      <div class="footer-cols">
+        <p>©2024. i-dizajn | sva prava zadržana</p>
+      </div>
+      <div class="footer-cols">
+        <p>
+          Adresa:
+        </p>
+        <p>
+          Ulica braće Radić 25, 10361 Sesvetski Kraljevec
+        </p>
+        <p>
+          OIB poduzeća: 68026481672
+        </p>
+        <p>
+          IBAN: 
+        </p>
+      </div>
+      <div class="footer-cols">
+        <p>Kontakt:</p>
+        <p>
+          mob: +385 99 8400 636 <br>
+          mail: info@i-dizajn.com <br>
+        </p>
+      </div>
+      <div class="footer-cols">
+        <a href="https://www.instagram.com/i_dizajn_/" target="_blank" class="social-icons"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://" target="_blank" class="social-icons"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.youtube.com/@i-dizajn" target="_blank" class="social-icons"><i class="fa-brands fa-square-youtube"></i></a>
+        <a href="www.linkedin.com/in/ivan-stojčević-8a3691293" target="_blank" class="social-icons"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+
+    
+    <div id="cookies">
+      <div class="cookies">
+        <p>Koristimo kolačiće radi što boljeg korisničkog iskustva. 
+          <a href="cookies-policy.html" target="_blank"></a>
+        </p>
+        <p id="cookies-btn-container">
+          <button id="cookies-btn">Razumijem</button>
+        </p>
+      </div>
+    </div>
+
+    <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/cookies.js"></script>
+    <script src="./scripts/script.js"></script>
+    
+  </body>
+</html>
